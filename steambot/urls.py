@@ -16,6 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from steambot.socket_server import SocketServer
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+]
+
+
+websocket_urlpatterns = [
+    path('ws/bot/', SocketServer),
 ]
