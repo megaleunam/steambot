@@ -1,0 +1,375 @@
+[
+    {
+        "model": "steam.armas",
+        "pk": 1,
+        "fields": {
+            "name": "AK-47"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 2,
+        "fields": {
+            "name": "AUG"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 3,
+        "fields": {
+            "name": "AWP"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 4,
+        "fields": {
+            "name": "Bayonet"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 5,
+        "fields": {
+            "name": "Bowie Knife"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 6,
+        "fields": {
+            "name": "Butterfly Knife"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 7,
+        "fields": {
+            "name": "Classic Knife"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 8,
+        "fields": {
+            "name": "CZ75-Auto"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 9,
+        "fields": {
+            "name": "Desert Eagle"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 10,
+        "fields": {
+            "name": "Dual Berettas"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 11,
+        "fields": {
+            "name": "Falchion Knife"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 12,
+        "fields": {
+            "name": "FAMAS"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 13,
+        "fields": {
+            "name": "Five-SeveN"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 14,
+        "fields": {
+            "name": "Flip Knife"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 15,
+        "fields": {
+            "name": "G3SG1"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 16,
+        "fields": {
+            "name": "Galil AR"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 17,
+        "fields": {
+            "name": "Glock-18"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 18,
+        "fields": {
+            "name": "Gut Knife"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 19,
+        "fields": {
+            "name": "Huntsman Knife"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 20,
+        "fields": {
+            "name": "Karambit"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 21,
+        "fields": {
+            "name": "M249"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 22,
+        "fields": {
+            "name": "M4A1-S"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 23,
+        "fields": {
+            "name": "M4A4"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 24,
+        "fields": {
+            "name": "M9 Bayonet"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 25,
+        "fields": {
+            "name": "MAC-10"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 26,
+        "fields": {
+            "name": "MAG-7"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 27,
+        "fields": {
+            "name": "MP5-SD"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 28,
+        "fields": {
+            "name": "MP7"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 29,
+        "fields": {
+            "name": "MP9"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 30,
+        "fields": {
+            "name": "Navaja Knife"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 31,
+        "fields": {
+            "name": "Negev"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 32,
+        "fields": {
+            "name": "Nomad Knife"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 33,
+        "fields": {
+            "name": "Nova"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 34,
+        "fields": {
+            "name": "P2000"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 35,
+        "fields": {
+            "name": "P250"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 36,
+        "fields": {
+            "name": "Paracord Knife"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 37,
+        "fields": {
+            "name": "PP-Bizon"
+        }
+    },
+
+    {
+        "model": "steam.armas",
+        "pk": 38,
+        "fields": {
+            "name": "R8 Revolver"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 39,
+        "fields": {
+            "name": "Sawed-Off"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 40,
+        "fields": {
+            "name": "SCAR-20"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 41,
+        "fields": {
+            "name": "SG 553"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 42,
+        "fields": {
+            "name": "Shadow Daggers"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 43,
+        "fields": {
+            "name": "Skeleton Knife"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 44,
+        "fields": {
+            "name": "SSG 08"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 45,
+        "fields": {
+            "name": "Stiletto Knife"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 46,
+        "fields": {
+            "name": "Survival Knife"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 47,
+        "fields": {
+            "name": "Talon Knife"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 48,
+        "fields": {
+            "name": "Tec-9"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 49,
+        "fields": {
+            "name": "UMP-45"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 50,
+        "fields": {
+            "name": "Ursus Knife"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 51,
+        "fields": {
+            "name": "USP-S"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 52,
+        "fields": {
+            "name": "XM1014"
+        }
+    },
+    {
+        "model": "steam.armas",
+        "pk": 53,
+        "fields": {
+            "name": "P90"
+        }
+    }
+]
+

@@ -25,7 +25,14 @@ SECRET_KEY = ')+8vinq+b)mq&2*sxwx3gfu=u70o)2g&b1ocht@l5fm3!au5nb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "192.168.0.105",
+    "192.168.0.105:8090",
+    "127.0.0.1:8090"
+    "127.0.0.1",
+    "192.168.99.100",
+    "192.168.99.100:8000"
+]
 
 
 # Application definition
@@ -74,21 +81,21 @@ WSGI_APPLICATION = 'steambot.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'steambot',
-        'HOST': '127.0.0.1:27017',
-        
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'steambot',
+#         'HOST': '192.168.99.1:27017', #192.168.56.1  192.168.99.1
+        
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -127,3 +134,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# CELERY STUFF
+BROKER_URL = 'pyamqp://guest@localhost//'
+CELERY_RESULT_BACKEND = 'redis://192.168.99.100:7001'
+CELERY_ACCEPT_CONTENT = ['application/json']
+CELERY_TASK_SERIALIZER = 'json'
+CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TIMEZONE = 'Africa/Nairobi'
