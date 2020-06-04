@@ -75,8 +75,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'steambot.wsgi.application'
-
+#WSGI_APPLICATION = 'steambot.wsgi.application'
+ASGI_APPLICATION = 'steambot.routing.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
@@ -135,6 +135,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+<<<<<<< HEAD
 # CELERY STUFF
 BROKER_URL = 'pyamqp://guest@localhost//'
 CELERY_RESULT_BACKEND = 'redis://192.168.99.100:7001'
@@ -142,3 +143,14 @@ CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'Africa/Nairobi'
+=======
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",  #redis como backend
+        "CONFIG": {
+            "hosts": [os.environ.get('REDIS_URL', 'redis://localhost:6379')],  # busca a redis en la direccion
+        }
+    },
+}
+>>>>>>> b4106bd3ad99644569d1957c88edf888b3b1558a
