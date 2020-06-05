@@ -11,9 +11,10 @@ class SocketServer(WebsocketConsumer):
         if self.scope['path'] == '/ws/bot/':
             accept = True
             async_to_sync(self.channel_layer.group_add)("bot", self.channel_name)
-        
+            print(async_to_sync)
 
         if accept:
+            print(accept)
             self.accept()
 
     def disconnect(self, close_code):
@@ -22,5 +23,6 @@ class SocketServer(WebsocketConsumer):
     # Receive message from room group
     def chat_message(self, event):
 
-        print(event)
         self.send(text_data=event["text"])
+
+        

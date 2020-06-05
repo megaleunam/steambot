@@ -26,12 +26,7 @@ SECRET_KEY = ')+8vinq+b)mq&2*sxwx3gfu=u70o)2g&b1ocht@l5fm3!au5nb'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "192.168.0.105",
-    "192.168.0.105:8090",
-    "127.0.0.1:8090"
-    "127.0.0.1",
-    "192.168.99.100",
-    "192.168.99.100:8000"
+    "*"
 ]
 
 
@@ -39,6 +34,7 @@ ALLOWED_HOSTS = [
 APPS = ['apps.steam']
 
 INSTALLED_APPS = [
+    'channels',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -78,6 +74,14 @@ TEMPLATES = [
 #WSGI_APPLICATION = 'steambot.wsgi.application'
 ASGI_APPLICATION = 'steambot.routing.application'
 
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels_redis.core.RedisChannelLayer",  #redis como backend
+        "CONFIG": {
+            "hosts": [('192.168.99.100', 6379)],  # busca a redis en la direccion os.environ.get('REDIS_URL', 'redis://192.168.99.100:7001')
+        }
+    },
+}
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
@@ -135,22 +139,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-<<<<<<< HEAD
 # CELERY STUFF
-BROKER_URL = 'pyamqp://guest@localhost//'
-CELERY_RESULT_BACKEND = 'redis://192.168.99.100:7001'
+BROKER_URL = 'redis://192.168.99.100:6379'
+CELERY_RESULT_BACKEND = 'redis://192.168.99.100:6379'
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'Africa/Nairobi'
-=======
 
-CHANNEL_LAYERS = {
-    "default": {
-        "BACKEND": "channels_redis.core.RedisChannelLayer",  #redis como backend
-        "CONFIG": {
-            "hosts": [os.environ.get('REDIS_URL', 'redis://localhost:6379')],  # busca a redis en la direccion
-        }
-    },
-}
->>>>>>> b4106bd3ad99644569d1957c88edf888b3b1558a
